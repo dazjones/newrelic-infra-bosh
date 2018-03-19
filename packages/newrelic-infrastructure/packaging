@@ -1,0 +1,3 @@
+set -e
+
+dpkg -i newrelic/newrelic-infra_systemd_1.0.292_amd64.deb

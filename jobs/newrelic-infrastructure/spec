@@ -1,0 +1,9 @@
+---
+name: newrelic-infrastructure
+
+templates: {}
+
+packages: 
+  - newrelic-infrastructure
+
+properties: {}

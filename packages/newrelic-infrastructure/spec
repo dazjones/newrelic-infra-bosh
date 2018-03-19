@@ -1,0 +1,7 @@
+---
+name: newrelic-infrastructure
+
+dependencies: []
+
+files:
+  - newrelic/newrelic-infra_systemd_1.0.292_amd64.deb
