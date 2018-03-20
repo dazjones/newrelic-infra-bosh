@@ -29,3 +29,6 @@ instance_groups:
   stemcell: default
   networks:
   - name: default
+  properties:
+    newrelic_infra:
+      license_key: ((newrelic_infra_license_key))

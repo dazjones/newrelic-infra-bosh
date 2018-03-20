@@ -8,4 +8,10 @@ templates:
 packages: 
   - newrelic-infra-bosh
 
-properties: {}
+properties:
+  newrelic_infra.license_key:
+    description: "Newrelic Infrastructure License Key"
+  newrelic_infra.display_name:
+    description: "Newrelic Infrastructure Display Name"
+  newrelic_infra.display_proxy:
+    description: "Newrelic Infrastructure Proxy URL"

@@ -12,7 +12,7 @@
 #          the only required value in your config file.
 # Default: none
 #
-license_key: <%= p("newrelic_infra_license_key") %>
+license_key: <%= p("newrelic_infra.license_key") %>
 
 #
 # Option : display_name
@@ -20,7 +20,11 @@ license_key: <%= p("newrelic_infra_license_key") %>
 #          reporting.
 # Default: Automatically generated hostname
 #
-#display_name: new_name
+<% if properties.newrelic_infra.display_name %>
+display_name=<%= properties.newrelic_infra.display_name %>-<%= spec.index %>-<%= spec.deployment %>
+<% else %>
+display_name=<%= spec.name %>-<%= spec.index %>-<%= spec.deployment %>
+<% end %>
 
 #
 # Option : proxy
@@ -28,7 +32,9 @@ license_key: <%= p("newrelic_infra_license_key") %>
 #          proxy URL (HTTP or HTTPS) to communicate with New Relic.
 # Default: none
 #
-#proxy: https://user:password@hostname:port
+<% if properties.newrelic_infra.proxy %>
+proxy=<%= properties.newrelic_infra.proxy %>
+<% end %>
 
 #
 # Option : verbose
