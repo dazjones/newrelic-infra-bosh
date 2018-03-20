@@ -1,0 +1,3 @@
+set -ex
+
+cp newrelic/infra_1.0.*.deb ${BOSH_INSTALL_TARGET}/

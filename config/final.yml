@@ -1,1 +1,7 @@
 name: newrelic-infra-bosh
+blobstore:
+  provider: s3
+  options:
+    host: storage.googleapis.com
+    port: 443
+    bucket_name: finkit-dev-blobstore

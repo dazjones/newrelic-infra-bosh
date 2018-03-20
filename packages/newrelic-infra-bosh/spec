@@ -1,0 +1,7 @@
+---
+name: newrelic-infra-bosh
+
+dependencies: []
+
+files:
+  - newrelic/infra_1.0.292.deb

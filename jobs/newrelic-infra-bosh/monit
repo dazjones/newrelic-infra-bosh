@@ -1,0 +1,4 @@
+check process newrelic-infra-bosh
+    with pidfile /var/vcap/sys/run/newrelic-infra-bosh/pid
+    start program "/var/vcap/jobs/newrelic-infra-bosh/bin/ctl start"
+    stop program "/var/vcap/jobs/newrelic-infra-bosh/bin/ctl stop"

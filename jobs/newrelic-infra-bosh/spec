@@ -1,0 +1,11 @@
+---
+name: newrelic-infra-bosh
+
+templates:
+  ctl: bin/ctl
+  newrelic-infra.yml.erb: newrelic-infra.yml
+
+packages: 
+  - newrelic-infra-bosh
+
+properties: {}
