@@ -11,7 +11,7 @@ case $1 in
 		export CPATH="$INCLUDE_PATH"
 		export CPPPATH="$INCLUDE_PATH"
 
-		newrelic-infra -config /var/vcap/jobs/newrelic-infra-bosh/newrelic-infra.yml
+		newrelic-infra -config /var/vcap/jobs/newrelic-infra-bosh/newrelic-infra.yml &
 		
 		pidof newrelic-infra | cut -f 1 -d \ > /var/vcap/sys/run/newrelic-infra-bosh/pid
     ;;
