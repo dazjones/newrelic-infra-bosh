@@ -21,9 +21,9 @@ license_key: <%= p("newrelic_infra.license_key") %>
 # Default: Automatically generated hostname
 #
 <% if properties.newrelic_infra.display_name %>
-display_name=<%= properties.newrelic_infra.display_name %>-<%= spec.index %>-<%= spec.deployment %>
+display_name: <%= properties.newrelic_infra.display_name %>-<%= spec.index %>-<%= spec.deployment %>
 <% else %>
-display_name=<%= spec.name %>-<%= spec.index %>-<%= spec.deployment %>
+display_name: <%= spec.name %>-<%= spec.index %>-<%= spec.deployment %>
 <% end %>
 
 #
